@@ -46,3 +46,62 @@ div{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.Contenedor_Elementos_De_Servicio_Barra{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Contenedor_Elementos_De_Configuracion_Y_Soporte_Barra{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Contenedor_Barra_De_Busqueda_Y_Notificacion{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.Contenedor_BarraUsuario_Y_Botones_De_Posteo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Contenedor_Principal_Proyectos{
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.Contenedor_Announcements_Y_Treding{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.Contenedor_Principal_home,
+.Contenedor_Principal_profile,
+.Contenedor_Principal_Messages,
+.Contenedor_Principal_History,
+.Contenedor_Principal_Tasks,
+.Contenedor_Principal_Communities,
+.Contenedor_Principal_Settings,
+.Contenedor_Principal_Support,
+.Contenedor_Principal_Privacy{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.ContenedorPrincipalBarraDeBusqueda,
+.ContenedorPrincipalBarraUsuario{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.ContenedorPrincipalNotificacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.ContenedorPrincipalBotonesDePosteo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
