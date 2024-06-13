@@ -1,6 +1,5 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 div{
@@ -104,4 +103,39 @@ div{
 .ContenedorPrincipalBotonesDePosteo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ContenedorProyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ContenedorAnnouncements{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.ContenedorTextosAnnouncements{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ContenedorTreding{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.ContenedorPerfilesTreding{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+}
+
+
+
+
+/*En este espasio se manejan las dimenciones y colores de las imagenes*/
+
+.icon{
+    width: 30px;
 }
