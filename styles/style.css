@@ -21,7 +21,6 @@ body{
 .Contenedor_Principal_Settings,
 .Contenedor_Principal_Support,
 .Contenedor_Principal_Privacy,
-.ContenedorPrincipalBarraDeBusqueda,
 .ContenedorPrincipalBarraUsuario{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -31,7 +30,14 @@ body{
 .Contenedor_Elementos_De_Configuracion_Y_Soporte_Barra,
 .Contenedor_Elementos_De_Servicio_Barra,
 .Contenedor_Elemento_Logotipo,
-.Contenedor_Cuadricula_General{
+.Contenedor_Cuadricula_General,
+.Contenedor_Subcuadricula_Dos,
+.Contenedor_Barra_De_Busqueda_Y_Notificacion,
+.Contenedor_BarraUsuario_Y_Botones_De_Posteo,
+.ContenedorPrincipalNotificacion,
+.ContenedorPrincipalBotonesDePosteo,
+.ContenedorHiUser,
+.ContenedorPrincipalBarraDeBusqueda{
     display: grid;
 }
 /*-------------------------------------------------------------------------------------*/
@@ -42,6 +48,7 @@ body{
     margin: 1px;
     padding: 2px;
 }
+
 .Contenedor_Subcuadricula_Uno{
     grid-column: 1/2;
     grid-row: 1/3;
@@ -52,6 +59,7 @@ body{
 .Contenedor_Subcuadricula_Dos{
     grid-column: 2/3;
     grid-row: 1/2;
+    grid-template-rows: 1fr 1fr;
     background: aqua;
 }
 
@@ -68,19 +76,28 @@ body{
 }
 
 .Contenedor_Elemento_Logotipo{
+    grid-column: 1/2;
+    grid-row: 1/2;
     grid-template-rows: 1fr;
 }
 
 .Contenedor_Elementos_De_Servicio_Barra{
+    grid-column: 1/2;
+    grid-row: 2/3;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 .Contenedor_Elementos_De_Configuracion_Y_Soporte_Barra{
+    grid-column: 1/2;
+    grid-row: 3/4;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 .Contenedor_Subcuadricula_Uno > div{
     border: 2px solid orange;
     padding: 2px;
 }
+
 .Contenedor_Subcuadricula_Uno > div > div{
     border: 2px solid red;
     padding-left: 10px;
@@ -94,32 +111,158 @@ body{
     justify-content: center;
 }
 
+.Contenedor_Principal_Logotipo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorIconLogoPagina{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorTxtIconLogoPagina{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.Contenedor_Principal_home{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Contenedor_Principal_profile{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.Contenedor_Principal_Messages{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.Contenedor_Principal_History{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.Contenedor_Principal_Tasks{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.Contenedor_Principal_Communities{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
 /*-------------------------------------------------------------------------------------*/
 
 /*Elementos de diseño que compoenen los elementos de la cuadricula dos*/
-.Contenedor_Subcuadricula_Dos{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
 
 .Contenedor_Barra_De_Busqueda_Y_Notificacion{
-    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
     grid-template-columns: 4fr 1fr;
 }
 
 .Contenedor_BarraUsuario_Y_Botones_De_Posteo{
-    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
     grid-template-columns: 1fr 1fr;
 }
-
+.ContenedorPrincipalBarraDeBusqueda{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 5fr;
+}
 .ContenedorPrincipalNotificacion{
-    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
     grid-template-columns: 1fr 1fr 3fr;
 }
 
 .ContenedorPrincipalBotonesDePosteo{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ContenedorHiUser{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ContenedorIconBusqueda{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorIconNotificacion{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorLogoUsuario{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.ContenedorNombreUsuario{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.ContenedorBarraDeBusqueda{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.ContenedorLogoUsuairio{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorTxtHiUser{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorTxtHiUserName{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.ContenedorBotonNew{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorBotonUpload{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.ContenedorBotonShare{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.Contenedor_Subcuadricula_Dos > div{
+    border: 2px solid orange;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Dos > div > div{
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Dos > div > div > div{
+    border: 2px solid green;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Dos > div > div > .ContenedorHiUser > div{
+    border: 2px solid white;
+    padding: 2px;
 }
 /*-------------------------------------------------------------------------------------*/
 
@@ -173,6 +316,18 @@ body{
 
 .iconLogo{
     width: 40px;
+}
+
+.icons_2{
+    width: 20px;
+}
+
+.icons_LogoUser{
+    width: 30px;
+}
+
+.icons_LogoUser_MoreTall{
+    width: 60px;
 }
 /*----------------------------------------------------------------------*/
 
