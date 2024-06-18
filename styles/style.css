@@ -589,6 +589,123 @@ body{
     grid-column: 1/2;
     grid-row: 2/3;
 }
+
+.ContenedorTituloDelContenodorProyectos{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorProyect1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.ContenedorProyect2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.ContenedorProyect3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.ContenedorProyect4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.ContenedorProyect5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.ContenedorProyect6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.Contenedor_Subcuadricula_Tres > div{
+    border: 2px solid orange;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Tres > div > div{
+    border: 2px solid red;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Tres > div > div > div{
+    border: 2px solid green;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Tres > div > div > div > div{
+    border: 2px solid white;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Tres > div > div > div > div > div{
+    border: 2px solid blue;
+    padding: 2px;
+}
+
+.Contenedor_Subcuadricula_Tres > div > div > div > div > div > div{
+    border: 2px solid darkslategray;
+    padding: 2px;
+}
+
+.ContenedorProyectos{
+    gap: 15px;
+}
+
+.ContenedorBackgroundOrage{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: orange;
+}
+
+.Contenefor_InfoProyect{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.Contenedor_TitleInfoProyect{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Contenedor_TextInfoProyect{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.Contenedor_IconsDeInterecaccionProyect{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.Contenedor_IconsDeInterecaccionProyect{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.Conteneor_IconPreferido{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.Contenefor_IconVerMas{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.Contenedor_IconCompartir{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
 /*-------------------------------------------------------------------------------------*/
 
 /*En este espasio se manejan las dimenciones y colores de las imagenes*/
