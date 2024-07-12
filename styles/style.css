@@ -5,17 +5,12 @@ body{
 
 .Contenedor_Cuadricula_General{
     height: 100vh;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 9fr;
 }
 /*-------------------------------------------------------------------------------------*/
 
 /*Elementos de deseño que pertenecen a la sucuadricilas uno, dos y tres*/
-.Contenedor_Cuadricula_General > div{
-    border: 2px solid black;
-    margin: 1px;
-    padding: 2px;
-}
 
 .Contenedor_Subcuadricula_Uno{
     grid-column: 1/2;
@@ -28,7 +23,8 @@ body{
 .Contenedor_Subcuadricula_Dos{
     grid-column: 2/3;
     grid-row: 1/2;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 80%;
     background: rgb(132, 0, 255);
 }
 
@@ -242,30 +238,39 @@ body{
     grid-column: 1/2;
     grid-row: 1/2;
     grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100%;
+    align-items: center;
 }
 
 .Contenedor_BarraUsuario_Y_Botones_De_Posteo{
     grid-column: 1/2;
     grid-row: 2/3;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100%;
+    align-content: center;
 }
+
 .ContenedorPrincipalBarraDeBusqueda{
     grid-column: 1/2;
     grid-row: 1/2;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 9fr;
 }
+
 .ContenedorPrincipalNotificacion{
     grid-column: 2/3;
     grid-row: 1/2;
     grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
 }
 
 .ContenedorPrincipalBotonesDePosteo{
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .ContenedorPrincipalBarraUsuario{
     grid-template-columns: 1fr 5fr;
+    align-items: center;
 }
 
 .ContenedorHiUser{
@@ -328,23 +333,9 @@ body{
     grid-column: 3/4;
     grid-row: 1/2;
 }
+
 .Contenedor_Subcuadricula_Dos > div{
     border: 2px solid orange;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Dos > div > div{
-    border: 2px solid red;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Dos > div > div > div{
-    border: 2px solid green;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Dos > div > div > .ContenedorHiUser > div{
-    border: 2px solid white;
     padding: 2px;
 }
 /*-------------------------------------------------------------------------------------*/
@@ -738,7 +729,7 @@ body{
 }
 
 .icons_LogoUser{
-    width: 30px;
+    width: 25px;
 }
 
 .icons_LogoUser_MoreTall{
@@ -747,6 +738,14 @@ body{
 /*----------------------------------------------------------------------*/
 
 /*Tamaño y estilo de la tipografica*/
+
+.TitleLogoTipo,
+.TextBarraLateral{
+    font-family: monospace;
+    font-weight: 900;
+    padding-bottom: 2px;
+}
+
 .TextBarraLateral{
     font-size: 1.5em;
     color: white;
