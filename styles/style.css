@@ -24,8 +24,9 @@ body{
     grid-column: 2/3;
     grid-row: 1/2;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 80%;
-    background: rgb(132, 0, 255);
+    grid-template-rows: 40% 60%;
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
 }
 
 .Contenedor_Subcuadricula_Tres{
@@ -240,6 +241,7 @@ body{
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 100%;
     align-items: center;
+    padding: 2px;
 }
 
 .Contenedor_BarraUsuario_Y_Botones_De_Posteo{
@@ -248,6 +250,7 @@ body{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 100%;
     align-content: center;
+    padding: 2px;
 }
 
 .ContenedorPrincipalBarraDeBusqueda{
@@ -269,6 +272,7 @@ body{
 }
 
 .ContenedorPrincipalBarraUsuario{
+    grid-template-rows: 100%;
     grid-template-columns: 1fr 5fr;
     align-items: center;
 }
@@ -277,11 +281,14 @@ body{
     grid-column: 2/3;
     grid-row: 1/2;
     grid-template-rows: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .ContenedorIconBusqueda{
     grid-column: 1/2;
     grid-row: 1/2;
+    justify-self: end;
 }
 
 .ContenedorIconNotificacion{
@@ -302,16 +309,19 @@ body{
 .ContenedorBarraDeBusqueda{
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-left: 10px;
 }
 
 .ContenedorLogoUsuairio{
     grid-column: 1/2;
     grid-row: 1/2;
+    justify-self: end;
 }
 
 .ContenedorTxtHiUser{
     grid-column: 1/2;
     grid-row: 1/2;
+    align-self: end;
 }
 
 .ContenedorTxtHiUserName{
@@ -334,9 +344,16 @@ body{
     grid-row: 1/2;
 }
 
-.Contenedor_Subcuadricula_Dos > div{
-    border: 2px solid orange;
-    padding: 2px;
+#Search{
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    height: 80%;
+    background: rgb(213, 227, 235);
+}
+
+.ContenedorPrincipalNotificacion > div{
+    margin: 2px 10px;
 }
 /*-------------------------------------------------------------------------------------*/
 
@@ -756,8 +773,44 @@ body{
     color: white;
 }
 
-/*---------------------------------------------------------------------*/
+.TexthiUser{
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
 
+.TexthiUserMoreNameUser{
+    margin-top: 0;
+    font-size: clamp(16px, 1.5rem, 1.8rem);
+}
+
+/*---------------------------------------------------------------------*/
+/*Botones*/
+.ContenedorPrincipalBotonesDePosteo > div{
+    margin: 0 5px;
+}
+
+button{
+    border-radius: 20px;
+    border: none;
+    background: rgb(31, 147, 255);
+    outline: none;
+    color: white;
+    width: 100%;
+    height: 35px;
+    font-size:  clamp(16px, 1.2rem, 1.5rem);
+}
+
+button:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 0.1px solid black;
+}
+
+button:active{
+    background: rgb(120, 255, 120);
+    color: green;
+}
+/*---------------------------------------------------------------------*/
 
 /*En esta sección se manejan todos los selectores que tiene atributos compartidos.*/
 .Contenedor_Principal_Logotipo,
