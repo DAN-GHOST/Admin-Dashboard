@@ -362,12 +362,12 @@ body{
 .Contenedor_Subcuadricula_Tres{
     grid-template-columns: 2fr 1fr;
 }
-
+ 
 .Contenedor_Principal_Proyectos{
     grid-column: 1/2;
     grid-row: 1/2;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 50px 7fr;
 }
 
 .Contenedor_Announcements_Y_Treding{
@@ -380,7 +380,9 @@ body{
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 12% 12% 12%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .ContenedorAnnouncements{
@@ -399,11 +401,6 @@ body{
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-rows:1fr 1fr 1fr 1fr;
-}
-
-.ContenedorTituloDelContenodorProyectos{
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 
 .ContenedorProyect1{
@@ -436,38 +433,9 @@ body{
     grid-row: 3/4;
 }
 
-.Contenedor_Subcuadricula_Tres > div{
-    border: 2px solid orange;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Tres > div > div{
-    border: 2px solid red;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Tres > div > div > div{
-    border: 2px solid green;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Tres > div > div > div > div{
-    border: 2px solid white;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Tres > div > div > div > div > div{
-    border: 2px solid blue;
-    padding: 2px;
-}
-
-.Contenedor_Subcuadricula_Tres > div > div > div > div > div > div{
-    border: 2px solid darkslategray;
-    padding: 2px;
-}
-
 .ContenedorProyectos{
     gap: 15px;
+
 }
 
 .ContenedorBackgroundOrage{
@@ -481,8 +449,9 @@ body{
     grid-row: 1/2;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 10px;
 }
-
+ 
 .Contenedor_TitleInfoProyect{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -607,6 +576,8 @@ body{
 .ContenedorTituloDelContenodorProyectos{
     grid-column: 1/2;
     grid-row: 1/2;
+    align-self: end;
+    padding-left: 15px;
 }
 
 .ContenedorProyect1{
@@ -639,27 +610,34 @@ body{
     grid-row: 3/4;
 }
 
-.Contenedor_Subcuadricula_Tres > div{
+.ContenedorProyectos > div{
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.Contenedor_Announcements_Y_Treding{
     border: 2px solid orange;
     padding: 2px;
 }
 
-.Contenedor_Subcuadricula_Tres > div > div{
+.Contenedor_Announcements_Y_Treding > div{
     border: 2px solid red;
     padding: 2px;
 }
 
-.Contenedor_Subcuadricula_Tres > div > div > div{
+.Contenedor_Announcements_Y_Treding > div > div{
     border: 2px solid green;
     padding: 2px;
 }
 
-.Contenedor_Subcuadricula_Tres > div > div > div > div{
+
+
+.Contenedor_Announcements_Y_Treding > div > div > div{
     border: 2px solid white;
     padding: 2px;
 }
 
-.Contenedor_Subcuadricula_Tres > div > div > div > div > div{
+.Contenedor_Announcements_Y_Treding > div > div > div > div{
     border: 2px solid blue;
     padding: 2px;
 }
@@ -667,23 +645,6 @@ body{
 .Contenedor_Subcuadricula_Tres > div > div > div > div > div > div{
     border: 2px solid darkslategray;
     padding: 2px;
-}
-
-.ContenedorProyectos{
-    gap: 15px;
-}
-
-.ContenedorBackgroundOrage{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background: orange;
-}
-
-.Contenefor_InfoProyect{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .Contenedor_TitleInfoProyect{
@@ -783,6 +744,9 @@ body{
     font-size: clamp(16px, 1.5rem, 1.8rem);
 }
 
+.TextTitleProyectos{
+    margin-bottom: 7px;
+}
 /*---------------------------------------------------------------------*/
 /*Botones*/
 .ContenedorPrincipalBotonesDePosteo > div{
@@ -834,8 +798,8 @@ button:active{
 .ContenedorProyect5,
 .ContenedorProyect6{
     display: grid;
-    grid-template-columns: 1fr 10fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 5% 10fr;
+    grid-template-rows: 100%;
 }
 
 .Contenedor_Subcuadricula_Uno,
