@@ -404,18 +404,21 @@ body{
     grid-row: 4/5;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding: 20px;
 }
 
 .ContenedorTextosAnnouncements{
     grid-column: 1/2;
     grid-row: 2/3;
     grid-template-rows: repeat(3, 33.333%);
+    padding: 40px;
 }
 
 .ContenedorPerfilesTreding{
     grid-column: 1/2;
     grid-row: 1/2;
     grid-template-rows:repeat(4, 1fr);
+    grid-template-columns: 1fr;
 }
 
 .ContenedorProyect1{
@@ -596,20 +599,8 @@ body{
     border-radius: 5px;
 }
 
-.Contenedor_Announcements_Y_Treding > div > div > div{
-    border-radius: 5px;
-    background: white;
-
-}
-
-.Contenedor_Announcements_Y_Treding > div > div > div > div{
-    border: 2px solid blue;
-    padding: 2px;
-}
-
-.Contenedor_Announcements_Y_Treding > div > div > div > div > div{
-    border: 2px solid darkslategray;
-    padding: 2px;
+.ContenedorIconLogoUser2{
+    justify-self: center;
 }
 /*-------------------------------------------------------------------------------------*/
 
@@ -677,6 +668,17 @@ body{
 .TextTitleProyectos{
     margin-bottom: 7px;
 }
+
+.TextTitle,
+.ArrobaUser{
+    margin-bottom: 0;
+}
+
+.TextInfoEventSocial,
+.TextLeyendaUser{
+    margin-top: 0;
+}
+
 /*---------------------------------------------------------------------*/
 /*Botones*/
 .ContenedorPrincipalBotonesDePosteo > div{
@@ -765,5 +767,23 @@ button:active{
 .ContenedorTredingPerfil4,
 .Contenedor_PerfilesTrending{
     display: grid;
+}
+
+.ContenedorTextosAnnouncements,
+.ContenedorTreding{
+    border-radius: 5px;
+    background: white;
+}
+
+.ContenedorTxtCommunityShareDay,
+.UpDatedPrivacyPolicy{
+    border-top: 2px solid darkgray;
+}
+
+.ContenedorTredingPerfil1,
+.ContenedorTredingPerfil2,
+.ContenedorTredingPerfil3,
+.ContenedorTredingPerfil4{
+    align-items: center;
 }
 /*-------------------------------------------------------------------------------------*/
