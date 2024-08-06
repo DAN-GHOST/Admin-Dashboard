@@ -665,7 +665,9 @@ body{
     font-size: clamp(16px, 1.5rem, 1.8rem);
 }
 
-.TextTitleProyectos{
+.TextTitleProyectos,
+.TxtTitleTreding,
+.TextTitleAnnouncements{
     margin-bottom: 7px;
 }
 
@@ -785,5 +787,10 @@ button:active{
 .ContenedorTredingPerfil3,
 .ContenedorTredingPerfil4{
     align-items: center;
+}
+
+.ContenedorTxtTreding,
+.ContenedorTxtAnnouncements{
+    align-self: end;
 }
 /*-------------------------------------------------------------------------------------*/
